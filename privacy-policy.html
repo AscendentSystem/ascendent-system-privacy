@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Privacy Policy — Ascendent System</title>
+<style>
+  :root {
+    --bg: #0a0b0f;
+    --bg-card: #12141c;
+    --border: #1f2330;
+    --text: #e8eaf0;
+    --text-dim: #9a9fb0;
+    --accent: #00d4ff;
+    --accent-dim: #0a6b80;
+    color-scheme: dark;
+  }
+  @media (prefers-color-scheme: light) {
+    :root:not([data-theme="dark"]) {
+      --bg: #f7f8fa;
+      --bg-card: #ffffff;
+      --border: #e2e5ec;
+      --text: #1a1c24;
+      --text-dim: #5a5f70;
+      --accent: #0090ad;
+      --accent-dim: #c9f3fb;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #0a0b0f;
+    --bg-card: #12141c;
+    --border: #1f2330;
+    --text: #e8eaf0;
+    --text-dim: #9a9fb0;
+    --accent: #00d4ff;
+    --accent-dim: #0a6b80;
+  }
+  * { box-sizing: border-box; }
+  html { scroll-padding-top: env(safe-area-inset-top, 0px); }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.65;
+    padding-top: env(safe-area-inset-top, 0px);
+    padding-bottom: env(safe-area-inset-bottom, 0px);
+  }
+  .wrap {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 56px 24px 96px;
+  }
+  header {
+    margin-bottom: 48px;
+    padding-bottom: 32px;
+    border-bottom: 1px solid var(--border);
+  }
+  .brand {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: 700;
+    letter-spacing: 0.3px;
+    color: var(--accent);
+    margin-bottom: 28px;
+    font-size: 15px;
+  }
+  .brand .mark {
+    width: 28px;
+    height: 28px;
+    border-radius: 7px;
+    border: 1.5px solid var(--accent);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 13px;
+    font-weight: 900;
+  }
+  h1 {
+    font-size: clamp(28px, 5vw, 38px);
+    line-height: 1.15;
+    margin: 0 0 12px;
+    letter-spacing: -0.3px;
+  }
+  .meta {
+    color: var(--text-dim);
+    font-size: 14px;
+  }
+  h2 {
+    font-size: 20px;
+    margin: 44px 0 14px;
+    padding-top: 4px;
+    letter-spacing: -0.1px;
+  }
+  h2 .num {
+    color: var(--accent);
+    font-variant-numeric: tabular-nums;
+    margin-right: 10px;
+    font-weight: 600;
+  }
+  p { margin: 0 0 14px; color: var(--text); max-width: 68ch; }
+  p.dim, li.dim { color: var(--text-dim); }
+  ul { margin: 0 0 14px; padding-left: 22px; }
+  li { margin-bottom: 8px; max-width: 64ch; }
+  a { color: var(--accent); text-decoration: none; border-bottom: 1px solid var(--accent-dim); }
+  a:hover { border-bottom-color: var(--accent); }
+  .card {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 18px 20px;
+    margin: 18px 0;
+  }
+  .card p:last-child { margin-bottom: 0; }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 16px 0;
+    font-size: 14.5px;
+  }
+  th, td {
+    text-align: left;
+    padding: 10px 12px;
+    border-bottom: 1px solid var(--border);
+    vertical-align: top;
+  }
+  th { color: var(--text-dim); font-weight: 600; font-size: 13px; }
+  .tag {
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--accent);
+    border: 1px solid var(--accent-dim);
+    border-radius: 999px;
+    padding: 2px 10px;
+    margin-bottom: 4px;
+  }
+  footer {
+    margin-top: 56px;
+    padding-top: 24px;
+    border-top: 1px solid var(--border);
+    color: var(--text-dim);
+    font-size: 13px;
+  }
+  .placeholder {
+    background: rgba(255, 196, 0, 0.1);
+    border: 1px dashed #e0b000;
+    color: #e0b000;
+    border-radius: 8px;
+    padding: 2px 8px;
+    font-size: 0.92em;
+    font-family: ui-monospace, monospace;
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <div class="brand">
+      <span class="mark">AS</span>
+      ASCENDENT SYSTEM
+    </div>
+    <h1>Informativa sulla Privacy</h1>
+    <p class="meta">Titolare: William Giaimo (ditta individuale) — Ultimo aggiornamento: <span class="placeholder">[inserire data di pubblicazione]</span></p>
+  </header>
+
+  <p>Questa informativa descrive quali informazioni raccoglie l'app <strong>Ascendent System</strong> e come vengono utilizzate. Il titolare del trattamento è <strong>William Giaimo</strong>, titolare della ditta individuale che sviluppa e pubblica l'app. L'abbiamo scritta per essere chiara, non per essere lunga: se qualcosa non ti è chiaro, puoi scriverci all'indirizzo in fondo alla pagina.</p>
+
+  <div class="card">
+    <p><strong>In sintesi:</strong> il tuo profilo di allenamento (nome, peso, età, altezza) e i tuoi progressi restano <strong>solo sul tuo dispositivo</strong> — non li inviamo mai a nessun server. L'unico scambio di dati con l'esterno avviene tramite Google AdMob, il servizio che mostra la pubblicità che sostiene l'app.</p>
+  </div>
+
+  <h2><span class="num">1.</span>Dati che restano sul tuo dispositivo</h2>
+  <p>Ascendent System è un'app che funziona in locale. Le seguenti informazioni vengono salvate esclusivamente nella memoria del tuo dispositivo, non vengono mai trasmesse a noi né a terzi, e sono accessibili solo a te:</p>
+  <ul>
+    <li>Nome, peso, altezza, età e sesso dichiarati nel profilo</li>
+    <li>Risultati dei test iniziali e lo storico degli allenamenti</li>
+    <li>Missioni, progressi, statistiche e livello raggiunto</li>
+    <li>Preferenze dell'app (lingua, tema, impostazioni di notifica)</li>
+  </ul>
+  <p class="dim">Se disinstalli l'app o cancelli i suoi dati dalle impostazioni del telefono, queste informazioni vengono eliminate in modo permanente — non ne conserviamo copia da nessuna parte, perché semplicemente non le riceviamo mai.</p>
+
+  <h2><span class="num">2.</span>Dati raccolti tramite la pubblicità (Google AdMob)</h2>
+  <p>Per sostenere lo sviluppo dell'app, mostriamo un singolo formato di pubblicità tramite <strong>Google AdMob</strong> (Google Mobile Ads SDK): un annuncio <strong>App Open</strong> a schermo intero, mostrato quando riapri l'app. Non usiamo altri formati (nessun banner, nessun video premiato, nessun annuncio interstitial o nativo). Quando l'app richiede questo annuncio, il tuo dispositivo comunica con i server di Google, che raccolgono automaticamente le seguenti informazioni, nelle categorie usate anche nella sezione "Sicurezza dei dati" di Google Play:</p>
+
+  <table>
+    <tr><th>Categoria (Google Play)</th><th>Dato</th><th>A cosa serve</th></tr>
+    <tr><td>Posizione approssimativa</td><td>Indirizzo IP</td><td>Stima di città/regione — l'app non richiede né accede alla posizione precisa (GPS) del dispositivo, non essendo un permesso richiesto</td></tr>
+    <tr><td>ID dispositivo o altri identificatori</td><td>ID pubblicitario, App Set ID</td><td>Riconoscere il dispositivo tra una richiesta e l'altra; applicare il limite di frequenza degli annunci impostato nel nostro account AdMob; collegare il comportamento tra più app sullo stesso dispositivo</td></tr>
+    <tr><td>Interazioni con l'app</td><td>Visualizzazioni e interazioni con l'annuncio App Open</td><td>Misurare se l'annuncio è stato mostrato o toccato</td></tr>
+    <tr><td>Diagnostica</td><td>Dati tecnici e di stabilità dell'SDK</td><td>Prestazioni, anche a scopo pubblicitario — raccolti automaticamente dall'SDK, non da codice scritto da noi</td></tr>
+  </table>
+
+  <p>Questi dati vengono raccolti ed elaborati direttamente da Google, secondo la sua propria informativa sulla privacy, che puoi leggere qui: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">policies.google.com/privacy</a>. Possono essere condivisi con altri partner della rete pubblicitaria di Google.</p>
+  <p class="dim">Questo scambio di dati è il motivo per cui l'app richiede una connessione a internet attiva per funzionare, anche se il resto delle sue funzionalità è completamente locale. Questa sezione è mantenuta coerente con quanto dichiarato nella sezione "Sicurezza dei dati" della scheda dell'app su Google Play: in caso di discrepanza tra le due, fa fede quanto dichiarato su Google Play.</p>
+
+  <h2><span class="num">3.</span>Le tue scelte</h2>
+  <ul>
+    <li><strong>ID pubblicitario:</strong> puoi reimpostarlo o disattivare la pubblicità personalizzata dalle impostazioni privacy del tuo dispositivo (su Android: Impostazioni → Google → Annunci).</li>
+    <li><strong>Dati del profilo:</strong> puoi modificarli o cancellarli in qualsiasi momento dall'app stessa, o eliminarli del tutto disinstallando l'app.</li>
+    <li><strong>Notifiche:</strong> puoi disattivarle dalle impostazioni del dispositivo o dalle impostazioni dell'app.</li>
+  </ul>
+
+  <h2><span class="num">4.</span>Minori</h2>
+  <p>Ascendent System non è un'app rivolta specificamente ai minori. L'app chiede una dichiarazione di età durante la configurazione iniziale; se l'utente dichiara un'età inferiore a quella richiesta, l'uso dell'app deve avvenire con il consenso di un genitore o tutore, come indicato nel testo stesso dell'app.</p>
+
+  <h2><span class="num">5.</span>I tuoi diritti (utenti nello Spazio Economico Europeo)</h2>
+  <p>Se ti trovi nell'Unione Europea, hai diritto ad accedere, correggere o richiedere la cancellazione dei dati che ti riguardano. Dato che il profilo e i progressi restano solo sul tuo dispositivo, la cancellazione è semplice: elimina i dati dell'app o disinstallala. Per i dati raccolti da Google tramite AdMob, puoi esercitare i tuoi diritti direttamente con Google, oltre che tramite le impostazioni del tuo dispositivo.</p>
+
+  <h2><span class="num">6.</span>Modifiche a questa informativa</h2>
+  <p>Se aggiorneremo questa informativa, la data in cima alla pagina verrà aggiornata di conseguenza. Ti invitiamo a controllarla periodicamente.</p>
+
+  <h2><span class="num">7.</span>Contatti</h2>
+  <p>Titolare del trattamento: William Giaimo (ditta individuale).<br>Per qualunque domanda su questa informativa o sui dati trattati, scrivici a: <a href="mailto:ascendentsystem@gmail.com">ascendentsystem@gmail.com</a></p>
+
+  <footer>
+    <span class="tag">Ascendent System</span>
+    <p style="margin-top:10px;">Questo documento è una base legale di partenza, non una consulenza legale. Prima della pubblicazione definitiva, è consigliabile una verifica da parte di un professionista, in particolare se l'app verrà distribuita anche fuori dall'Unione Europea.</p>
+  </footer>
+
+</div>
+</body>
+</html>
