@@ -5,221 +5,176 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Privacy Policy — Ascendent System</title>
 <style>
-  :root {
-    --bg: #0a0b0f;
-    --bg-card: #12141c;
-    --border: #1f2330;
-    --text: #e8eaf0;
-    --text-dim: #9a9fb0;
-    --accent: #00d4ff;
-    --accent-dim: #0a6b80;
-    color-scheme: dark;
-  }
+  :root { --bg:#0a0b0f; --bg-card:#12141c; --border:#1f2330; --text:#e8eaf0; --text-dim:#9a9fb0; --accent:#00d4ff; --accent-dim:#0a6b80; color-scheme: dark; }
   @media (prefers-color-scheme: light) {
-    :root:not([data-theme="dark"]) {
-      --bg: #f7f8fa;
-      --bg-card: #ffffff;
-      --border: #e2e5ec;
-      --text: #1a1c24;
-      --text-dim: #5a5f70;
-      --accent: #0090ad;
-      --accent-dim: #c9f3fb;
-    }
+    :root:not([data-theme="dark"]) { --bg:#f7f8fa; --bg-card:#ffffff; --border:#e2e5ec; --text:#1a1c24; --text-dim:#5a5f70; --accent:#0090ad; --accent-dim:#c9f3fb; color-scheme: light; }
   }
-  :root[data-theme="dark"] {
-    --bg: #0a0b0f;
-    --bg-card: #12141c;
-    --border: #1f2330;
-    --text: #e8eaf0;
-    --text-dim: #9a9fb0;
-    --accent: #00d4ff;
-    --accent-dim: #0a6b80;
-  }
+  :root[data-theme="dark"] { --bg:#0a0b0f; --bg-card:#12141c; --border:#1f2330; --text:#e8eaf0; --text-dim:#9a9fb0; --accent:#00d4ff; --accent-dim:#0a6b80; }
   * { box-sizing: border-box; }
   html { scroll-padding-top: env(safe-area-inset-top, 0px); }
-  body {
-    margin: 0;
-    background: var(--bg);
-    color: var(--text);
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-    line-height: 1.65;
-    padding-top: env(safe-area-inset-top, 0px);
-    padding-bottom: env(safe-area-inset-bottom, 0px);
-  }
-  .wrap {
-    max-width: 720px;
-    margin: 0 auto;
-    padding: 56px 24px 96px;
-  }
-  header {
-    margin-bottom: 48px;
-    padding-bottom: 32px;
-    border-bottom: 1px solid var(--border);
-  }
-  .brand {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    font-weight: 700;
-    letter-spacing: 0.3px;
-    color: var(--accent);
-    margin-bottom: 28px;
-    font-size: 15px;
-  }
-  .brand .mark {
-    width: 28px;
-    height: 28px;
-    border-radius: 7px;
-    border: 1.5px solid var(--accent);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 13px;
-    font-weight: 900;
-  }
-  h1 {
-    font-size: clamp(28px, 5vw, 38px);
-    line-height: 1.15;
-    margin: 0 0 12px;
-    letter-spacing: -0.3px;
-  }
-  .meta {
-    color: var(--text-dim);
-    font-size: 14px;
-  }
-  h2 {
-    font-size: 20px;
-    margin: 44px 0 14px;
-    padding-top: 4px;
-    letter-spacing: -0.1px;
-  }
-  h2 .num {
-    color: var(--accent);
-    font-variant-numeric: tabular-nums;
-    margin-right: 10px;
-    font-weight: 600;
-  }
-  p { margin: 0 0 14px; color: var(--text); max-width: 68ch; }
-  p.dim, li.dim { color: var(--text-dim); }
-  ul { margin: 0 0 14px; padding-left: 22px; }
-  li { margin-bottom: 8px; max-width: 64ch; }
-  a { color: var(--accent); text-decoration: none; border-bottom: 1px solid var(--accent-dim); }
-  a:hover { border-bottom-color: var(--accent); }
-  .card {
-    background: var(--bg-card);
-    border: 1px solid var(--border);
-    border-radius: 12px;
-    padding: 18px 20px;
-    margin: 18px 0;
-  }
-  .card p:last-child { margin-bottom: 0; }
-  table {
-    width: 100%;
-    border-collapse: collapse;
-    margin: 16px 0;
-    font-size: 14.5px;
-  }
-  th, td {
-    text-align: left;
-    padding: 10px 12px;
-    border-bottom: 1px solid var(--border);
-    vertical-align: top;
-  }
-  th { color: var(--text-dim); font-weight: 600; font-size: 13px; }
-  .tag {
-    display: inline-block;
-    font-size: 12px;
-    font-weight: 600;
-    color: var(--accent);
-    border: 1px solid var(--accent-dim);
-    border-radius: 999px;
-    padding: 2px 10px;
-    margin-bottom: 4px;
-  }
-  footer {
-    margin-top: 56px;
-    padding-top: 24px;
-    border-top: 1px solid var(--border);
-    color: var(--text-dim);
-    font-size: 13px;
-  }
-  .placeholder {
-    background: rgba(255, 196, 0, 0.1);
-    border: 1px dashed #e0b000;
-    color: #e0b000;
-    border-radius: 8px;
-    padding: 2px 8px;
-    font-size: 0.92em;
-    font-family: ui-monospace, monospace;
-  }
+  body { margin:0; background:var(--bg); color:var(--text);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Noto Sans","Noto Sans CJK SC","Noto Sans CJK JP","Hiragino Sans","PingFang SC","Microsoft YaHei","Yu Gothic",Helvetica,Arial,sans-serif;
+    line-height:1.7; padding-top:env(safe-area-inset-top,0px); padding-bottom:env(safe-area-inset-bottom,0px); }
+  .wrap { max-width:720px; margin:0 auto; padding:40px 24px 96px; }
+  .top { display:flex; flex-wrap:wrap; align-items:center; justify-content:space-between; gap:16px; padding-bottom:20px; margin-bottom:32px; border-bottom:1px solid var(--border); }
+  .brand { display:flex; align-items:center; gap:10px; font-weight:700; letter-spacing:.3px; color:var(--accent); font-size:15px; }
+  .brand .mark { width:28px; height:28px; border-radius:7px; border:1.5px solid var(--accent); display:flex; align-items:center; justify-content:center; font-size:13px; font-weight:900; }
+  .langs { display:flex; flex-wrap:wrap; gap:6px; }
+  .langs button { font:inherit; font-size:13px; color:var(--text-dim); background:transparent; border:1px solid var(--border); border-radius:999px; padding:6px 14px; cursor:pointer; }
+  .langs button:hover { color:var(--text); border-color:var(--accent-dim); }
+  .langs button[aria-pressed="true"] { color:var(--accent); border-color:var(--accent); }
+  .lang-section { display:none; }
+  .lang-section.active { display:block; }
+  h1 { font-size:clamp(28px,5vw,38px); line-height:1.2; margin:0 0 12px; letter-spacing:-.3px; }
+  .meta { color:var(--text-dim); font-size:14px; margin:0 0 28px; }
+  h2 { font-size:20px; margin:44px 0 14px; letter-spacing:-.1px; }
+  h2 .num { color:var(--accent); font-variant-numeric:tabular-nums; margin-inline-end:10px; font-weight:600; }
+  p { margin:0 0 14px; max-width:68ch; }
+  p.dim { color:var(--text-dim); }
+  ul { margin:0 0 14px; padding-inline-start:22px; }
+  li { margin-bottom:8px; max-width:64ch; }
+  a { color:var(--accent); text-decoration:none; border-bottom:1px solid var(--accent-dim); }
+  a:hover { border-bottom-color:var(--accent); }
+  .card { background:var(--bg-card); border:1px solid var(--border); border-radius:12px; padding:18px 20px; margin:18px 0; }
+  .card p:last-child { margin-bottom:0; }
+  .tablewrap { overflow-x:auto; margin:16px 0; }
+  table { width:100%; border-collapse:collapse; font-size:14.5px; min-width:520px; }
+  th, td { text-align:start; padding:10px 12px; border-bottom:1px solid var(--border); vertical-align:top; }
+  th { color:var(--text-dim); font-weight:600; font-size:13px; }
+  footer { margin-top:56px; padding-top:24px; border-top:1px solid var(--border); color:var(--text-dim); font-size:13px; }
+  .placeholder { background:rgba(255,196,0,.1); border:1px dashed #e0b000; color:#e0b000; border-radius:8px; padding:2px 8px; font-size:.92em; font-family:ui-monospace,monospace; }
 </style>
 </head>
 <body>
 <div class="wrap">
-
-  <header>
-    <div class="brand">
-      <span class="mark">AS</span>
-      ASCENDENT SYSTEM
-    </div>
-    <h1>Informativa sulla Privacy</h1>
-    <p class="meta">Titolare: William Giaimo (ditta individuale) — Ultimo aggiornamento: <span class="placeholder">[inserire data di pubblicazione]</span></p>
-  </header>
-
-  <p>Questa informativa descrive quali informazioni raccoglie l'app <strong>Ascendent System</strong> e come vengono utilizzate. Il titolare del trattamento è <strong>William Giaimo</strong>, titolare della ditta individuale che sviluppa e pubblica l'app. L'abbiamo scritta per essere chiara, non per essere lunga: se qualcosa non ti è chiaro, puoi scriverci all'indirizzo in fondo alla pagina.</p>
-
-  <div class="card">
-    <p><strong>In sintesi:</strong> il tuo profilo di allenamento (nome, peso, età, altezza) e i tuoi progressi restano <strong>solo sul tuo dispositivo</strong> — non li inviamo mai a nessun server. L'unico scambio di dati con l'esterno avviene tramite Google AdMob, il servizio che mostra la pubblicità che sostiene l'app.</p>
+  <div class="top">
+    <div class="brand"><span class="mark">AS</span>ASCENDENT SYSTEM</div>
+    <div class="langs" role="group" aria-label="Language"><button type="button" data-set="it">Italiano</button><button type="button" data-set="en">English</button><button type="button" data-set="zh">中文</button><button type="button" data-set="ja">日本語</button><button type="button" data-set="ar">العربية</button></div>
   </div>
 
+<section class="lang-section active" lang="it" dir="ltr" data-lang="it">
+  <h1>Informativa sulla Privacy</h1>
+  <p class="meta">Titolare: William Giaimo (ditta individuale) — Ultimo aggiornamento: <span class="placeholder">[inserire data di pubblicazione]</span></p>
+  <p class="intro">Questa informativa descrive quali informazioni raccoglie l'app <strong>Ascendent System</strong> e come vengono utilizzate. Il titolare del trattamento è <strong>William Giaimo</strong>, titolare della ditta individuale che sviluppa e pubblica l'app. L'abbiamo scritta per essere chiara, non per essere lunga: se qualcosa non ti è chiaro, puoi scriverci all'indirizzo in fondo alla pagina.</p>
+  <div class="card"><p><strong>In sintesi:</strong> il tuo profilo di allenamento (nome, peso, età, altezza) e i tuoi progressi restano <strong>solo sul tuo dispositivo</strong> — non li inviamo mai a nessun server. L'unico scambio di dati con l'esterno avviene tramite Google AdMob, il servizio che mostra la pubblicità che sostiene l'app.</p></div>
   <h2><span class="num">1.</span>Dati che restano sul tuo dispositivo</h2>
-  <p>Ascendent System è un'app che funziona in locale. Le seguenti informazioni vengono salvate esclusivamente nella memoria del tuo dispositivo, non vengono mai trasmesse a noi né a terzi, e sono accessibili solo a te:</p>
-  <ul>
-    <li>Nome, peso, altezza, età e sesso dichiarati nel profilo</li>
-    <li>Risultati dei test iniziali e lo storico degli allenamenti</li>
-    <li>Missioni, progressi, statistiche e livello raggiunto</li>
-    <li>Preferenze dell'app (lingua, tema, impostazioni di notifica)</li>
-  </ul>
-  <p class="dim">Se disinstalli l'app o cancelli i suoi dati dalle impostazioni del telefono, queste informazioni vengono eliminate in modo permanente — non ne conserviamo copia da nessuna parte, perché semplicemente non le riceviamo mai.</p>
-
+  <p>Ascendent System è un'app che funziona in locale. Le seguenti informazioni vengono salvate esclusivamente nella memoria del tuo dispositivo, non vengono mai trasmesse a noi né a terzi, e sono accessibili solo a te:</p><ul><li>Nome, peso, altezza, età e sesso dichiarati nel profilo</li><li>Risultati dei test iniziali e lo storico degli allenamenti</li><li>Missioni, progressi, statistiche e livello raggiunto</li><li>Preferenze dell'app (lingua, tema, impostazioni di notifica)</li></ul><p class="dim">Se disinstalli l'app o cancelli i suoi dati dalle impostazioni del telefono, queste informazioni vengono eliminate in modo permanente — non ne conserviamo copia da nessuna parte, perché semplicemente non le riceviamo mai.</p>
   <h2><span class="num">2.</span>Dati raccolti tramite la pubblicità (Google AdMob)</h2>
   <p>Per sostenere lo sviluppo dell'app, mostriamo un singolo formato di pubblicità tramite <strong>Google AdMob</strong> (Google Mobile Ads SDK): un annuncio <strong>App Open</strong> a schermo intero, mostrato quando riapri l'app. Non usiamo altri formati (nessun banner, nessun video premiato, nessun annuncio interstitial o nativo). Quando l'app richiede questo annuncio, il tuo dispositivo comunica con i server di Google, che raccolgono automaticamente le seguenti informazioni, nelle categorie usate anche nella sezione "Sicurezza dei dati" di Google Play:</p>
-
-  <table>
-    <tr><th>Categoria (Google Play)</th><th>Dato</th><th>A cosa serve</th></tr>
-    <tr><td>Posizione approssimativa</td><td>Indirizzo IP</td><td>Stima di città/regione — l'app non richiede né accede alla posizione precisa (GPS) del dispositivo, non essendo un permesso richiesto</td></tr>
-    <tr><td>ID dispositivo o altri identificatori</td><td>ID pubblicitario, App Set ID</td><td>Riconoscere il dispositivo tra una richiesta e l'altra; applicare il limite di frequenza degli annunci impostato nel nostro account AdMob; collegare il comportamento tra più app sullo stesso dispositivo</td></tr>
-    <tr><td>Interazioni con l'app</td><td>Visualizzazioni e interazioni con l'annuncio App Open</td><td>Misurare se l'annuncio è stato mostrato o toccato</td></tr>
-    <tr><td>Diagnostica</td><td>Dati tecnici e di stabilità dell'SDK</td><td>Prestazioni, anche a scopo pubblicitario — raccolti automaticamente dall'SDK, non da codice scritto da noi</td></tr>
-  </table>
-
-  <p>Questi dati vengono raccolti ed elaborati direttamente da Google, secondo la sua propria informativa sulla privacy, che puoi leggere qui: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">policies.google.com/privacy</a>. Possono essere condivisi con altri partner della rete pubblicitaria di Google.</p>
+  <div class="tablewrap"><table><tr><th>Categoria (Google Play)</th><th>Dato</th><th>A cosa serve</th></tr><tr><td>Posizione approssimativa</td><td>Indirizzo IP</td><td>Stima di città/regione — l'app non richiede né accede alla posizione precisa (GPS) del dispositivo, non essendo un permesso richiesto</td></tr><tr><td>ID dispositivo o altri identificatori</td><td>ID pubblicitario, App Set ID</td><td>Riconoscere il dispositivo tra una richiesta e l'altra; applicare il limite di frequenza degli annunci impostato nel nostro account AdMob; collegare il comportamento tra più app sullo stesso dispositivo</td></tr><tr><td>Interazioni con l'app</td><td>Visualizzazioni e interazioni con l'annuncio App Open</td><td>Misurare se l'annuncio è stato mostrato o toccato</td></tr><tr><td>Diagnostica</td><td>Dati tecnici e di stabilità dell'SDK</td><td>Prestazioni, anche a scopo pubblicitario — raccolti automaticamente dall'SDK, non da codice scritto da noi</td></tr></table></div>
+  <p>Questi dati vengono raccolti ed elaborati direttamente da Google, secondo la sua propria informativa sulla privacy, che puoi leggere qui: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener" dir="ltr">policies.google.com/privacy</a>. Possono essere condivisi con altri partner della rete pubblicitaria di Google.</p>
   <p class="dim">Questo scambio di dati è il motivo per cui l'app richiede una connessione a internet attiva per funzionare, anche se il resto delle sue funzionalità è completamente locale. Questa sezione è mantenuta coerente con quanto dichiarato nella sezione "Sicurezza dei dati" della scheda dell'app su Google Play: in caso di discrepanza tra le due, fa fede quanto dichiarato su Google Play.</p>
-
-  <h2><span class="num">3.</span>Le tue scelte</h2>
-  <ul>
-    <li><strong>ID pubblicitario:</strong> puoi reimpostarlo o disattivare la pubblicità personalizzata dalle impostazioni privacy del tuo dispositivo (su Android: Impostazioni → Google → Annunci).</li>
-    <li><strong>Dati del profilo:</strong> puoi modificarli o cancellarli in qualsiasi momento dall'app stessa, o eliminarli del tutto disinstallando l'app.</li>
-    <li><strong>Notifiche:</strong> puoi disattivarle dalle impostazioni del dispositivo o dalle impostazioni dell'app.</li>
-  </ul>
-
-  <h2><span class="num">4.</span>Minori</h2>
-  <p>Ascendent System non è un'app rivolta specificamente ai minori. L'app chiede una dichiarazione di età durante la configurazione iniziale; se l'utente dichiara un'età inferiore a quella richiesta, l'uso dell'app deve avvenire con il consenso di un genitore o tutore, come indicato nel testo stesso dell'app.</p>
-
-  <h2><span class="num">5.</span>I tuoi diritti (utenti nello Spazio Economico Europeo)</h2>
-  <p>Se ti trovi nell'Unione Europea, hai diritto ad accedere, correggere o richiedere la cancellazione dei dati che ti riguardano. Dato che il profilo e i progressi restano solo sul tuo dispositivo, la cancellazione è semplice: elimina i dati dell'app o disinstallala. Per i dati raccolti da Google tramite AdMob, puoi esercitare i tuoi diritti direttamente con Google, oltre che tramite le impostazioni del tuo dispositivo.</p>
-
-  <h2><span class="num">6.</span>Modifiche a questa informativa</h2>
-  <p>Se aggiorneremo questa informativa, la data in cima alla pagina verrà aggiornata di conseguenza. Ti invitiamo a controllarla periodicamente.</p>
-
+  <h2><span class="num">3.</span>Le tue scelte</h2><ul><li><strong>ID pubblicitario:</strong> puoi reimpostarlo o disattivare la pubblicità personalizzata dalle impostazioni privacy del tuo dispositivo (su Android: Impostazioni → Google → Annunci).</li><li><strong>Dati del profilo:</strong> puoi modificarli o cancellarli in qualsiasi momento dall'app stessa, o eliminarli del tutto disinstallando l'app.</li><li><strong>Notifiche:</strong> puoi disattivarle dalle impostazioni del dispositivo o dalle impostazioni dell'app.</li></ul>
+  <h2><span class="num">4.</span>Minori</h2><p>Ascendent System non è un'app rivolta specificamente ai minori. L'app chiede una dichiarazione di età durante la configurazione iniziale; se l'utente dichiara un'età inferiore a quella richiesta, l'uso dell'app deve avvenire con il consenso di un genitore o tutore, come indicato nel testo stesso dell'app.</p>
+  <h2><span class="num">5.</span>I tuoi diritti (utenti nello Spazio Economico Europeo)</h2><p>Se ti trovi nell'Unione Europea, hai diritto ad accedere, correggere o richiedere la cancellazione dei dati che ti riguardano. Dato che il profilo e i progressi restano solo sul tuo dispositivo, la cancellazione è semplice: elimina i dati dell'app o disinstallala. Per i dati raccolti da Google tramite AdMob, puoi esercitare i tuoi diritti direttamente con Google, oltre che tramite le impostazioni del tuo dispositivo.</p>
+  <h2><span class="num">6.</span>Modifiche a questa informativa</h2><p>Se aggiorneremo questa informativa, la data in cima alla pagina verrà aggiornata di conseguenza. Ti invitiamo a controllarla periodicamente.</p>
   <h2><span class="num">7.</span>Contatti</h2>
-  <p>Titolare del trattamento: William Giaimo (ditta individuale).<br>Per qualunque domanda su questa informativa o sui dati trattati, scrivici a: <a href="mailto:ascendentsystem@gmail.com">ascendentsystem@gmail.com</a></p>
-
-  <footer>
-    <span class="tag">Ascendent System</span>
-    <p style="margin-top:10px;">Questo documento è una base legale di partenza, non una consulenza legale. Prima della pubblicazione definitiva, è consigliabile una verifica da parte di un professionista, in particolare se l'app verrà distribuita anche fuori dall'Unione Europea.</p>
-  </footer>
-
+  <p>Titolare del trattamento: William Giaimo (ditta individuale).<br>Per qualunque domanda su questa informativa o sui dati trattati, scrivici a: <a href="mailto:ascendentsystem@gmail.com" dir="ltr">ascendentsystem@gmail.com</a></p>
+  <footer>Questa informativa è disponibile in più lingue per comodità. In caso di discrepanza tra le versioni, prevale la versione italiana.</footer>
+</section>
+<section class="lang-section" lang="en" dir="ltr" data-lang="en">
+  <h1>Privacy Policy</h1>
+  <p class="meta">Data controller: William Giaimo (sole proprietorship) — Last updated: <span class="placeholder">[insert publication date]</span></p>
+  <p class="intro">This policy describes what information the <strong>Ascendent System</strong> app collects and how it is used. The data controller is <strong>William Giaimo</strong>, sole proprietor of the business that develops and publishes the app. We wrote it to be clear, not long: if anything is unclear, you can write to us at the address at the bottom of the page.</p>
+  <div class="card"><p><strong>In short:</strong> your training profile (name, weight, age, height) and your progress stay <strong>only on your device</strong> — we never send them to any server. The only exchange of data with the outside happens through Google AdMob, the service that shows the advertising that supports the app.</p></div>
+  <h2><span class="num">1.</span>Data that stays on your device</h2>
+  <p>Ascendent System works locally. The following information is saved exclusively in your device's storage, is never transmitted to us or to third parties, and is accessible only to you:</p><ul><li>Name, weight, height, age and sex entered in the profile</li><li>Initial test results and workout history</li><li>Missions, progress, statistics and level reached</li><li>App preferences (language, theme, notification settings)</li></ul><p class="dim">If you uninstall the app or clear its data from your phone's settings, this information is permanently deleted — we keep no copy anywhere, because we never receive it.</p>
+  <h2><span class="num">2.</span>Data collected through advertising (Google AdMob)</h2>
+  <p>To support the development of the app, we show a single advertising format through <strong>Google AdMob</strong> (Google Mobile Ads SDK): a full-screen <strong>App Open</strong> ad, shown when you reopen the app. We use no other formats (no banners, no rewarded video, no interstitial or native ads). When the app requests this ad, your device communicates with Google's servers, which automatically collect the following information, in the same categories used in the "Data safety" section of Google Play:</p>
+  <div class="tablewrap"><table><tr><th>Category (Google Play)</th><th>Data</th><th>Purpose</th></tr><tr><td>Approximate location</td><td>IP address</td><td>Estimate of city/region — the app neither requests nor accesses the device's precise location (GPS), as that permission is not requested</td></tr><tr><td>Device or other IDs</td><td>Advertising ID, App Set ID</td><td>Recognizing the device between requests; applying the ad frequency limit set in our AdMob account; linking behavior across multiple apps on the same device</td></tr><tr><td>App interactions</td><td>Views of and interactions with the App Open ad</td><td>Measuring whether the ad was shown or tapped</td></tr><tr><td>Diagnostics</td><td>Technical and stability data of the SDK</td><td>Performance, including for advertising purposes — collected automatically by the SDK, not by code written by us</td></tr></table></div>
+  <p>This data is collected and processed directly by Google, under its own privacy policy, which you can read here: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener" dir="ltr">policies.google.com/privacy</a>. It may be shared with other partners of Google's advertising network.</p>
+  <p class="dim">This exchange of data is the reason the app requires an active internet connection to work, even though the rest of its features are entirely local. This section is kept consistent with what is declared in the "Data safety" section of the app's listing on Google Play: in case of discrepancy between the two, what is declared on Google Play prevails.</p>
+  <h2><span class="num">3.</span>Your choices</h2><ul><li><strong>Advertising ID:</strong> you can reset it or turn off personalized ads from your device's privacy settings (on Android: Settings → Google → Ads).</li><li><strong>Profile data:</strong> you can edit or delete it at any time from within the app, or remove it entirely by uninstalling the app.</li><li><strong>Notifications:</strong> you can turn them off from your device settings or the app settings.</li></ul>
+  <h2><span class="num">4.</span>Minors</h2><p>Ascendent System is not an app aimed specifically at minors. The app asks for an age declaration during initial setup; if the user declares an age below the required one, use of the app must take place with the consent of a parent or guardian, as stated in the app's own text.</p>
+  <h2><span class="num">5.</span>Your rights (users in the European Economic Area)</h2><p>If you are in the European Union, you have the right to access, correct or request deletion of data concerning you. Since the profile and progress stay only on your device, deletion is simple: delete the app's data or uninstall it. For data collected by Google through AdMob, you can exercise your rights directly with Google, as well as through your device settings.</p>
+  <h2><span class="num">6.</span>Changes to this policy</h2><p>If we update this policy, the date at the top of the page will be updated accordingly. We encourage you to check it periodically.</p>
+  <h2><span class="num">7.</span>Contact</h2>
+  <p>Data controller: William Giaimo (sole proprietorship).<br>For any question about this policy or the data processed, write to us at: <a href="mailto:ascendentsystem@gmail.com" dir="ltr">ascendentsystem@gmail.com</a></p>
+  <footer>This policy is available in several languages for convenience. In case of discrepancy between versions, the Italian version prevails.</footer>
+</section>
+<section class="lang-section" lang="zh" dir="ltr" data-lang="zh">
+  <h1>隐私政策</h1>
+  <p class="meta">数据控制者：William Giaimo（个体经营） — 最后更新: <span class="placeholder">[填写发布日期]</span></p>
+  <p class="intro">本政策说明 <strong>Ascendent System</strong> 应用收集哪些信息以及如何使用这些信息。数据控制者为 <strong>William Giaimo</strong>，即开发并发布本应用的个体经营者。我们力求清晰而非冗长：如有任何不明之处，可通过页面底部的地址联系我们。</p>
+  <div class="card"><p><strong>简而言之：</strong>你的训练档案（姓名、体重、年龄、身高）和进度<strong>仅保存在你的设备上</strong>——我们绝不会将其发送到任何服务器。唯一与外部交换数据的途径是 Google AdMob，即展示支持本应用运营的广告的服务。</p></div>
+  <h2><span class="num">1.</span>保存在你设备上的数据</h2>
+  <p>Ascendent System 是一款本地运行的应用。以下信息仅保存在你设备的存储空间中，绝不会传输给我们或第三方，只有你本人可以访问：</p><ul><li>在档案中填写的姓名、体重、身高、年龄和性别</li><li>初始测试结果和训练历史</li><li>任务、进度、统计数据和已达到的等级</li><li>应用偏好设置（语言、主题、通知设置）</li></ul><p class="dim">如果你卸载应用，或在手机设置中清除其数据，这些信息将被永久删除——我们不会在任何地方保留副本，因为我们从未收到过这些数据。</p>
+  <h2><span class="num">2.</span>通过广告收集的数据（Google AdMob）</h2>
+  <p>为支持应用的开发，我们通过 <strong>Google AdMob</strong>（Google Mobile Ads SDK）展示单一格式的广告：重新打开应用时显示的全屏<strong>开屏（App Open）</strong>广告。我们不使用其他格式（没有横幅广告、激励视频、插页式广告或原生广告）。当应用请求该广告时，你的设备会与 Google 服务器通信，Google 会自动收集以下信息，分类与 Google Play“数据安全”部分所用分类一致：</p>
+  <div class="tablewrap"><table><tr><th>类别（Google Play）</th><th>数据</th><th>用途</th></tr><tr><td>大致位置</td><td>IP 地址</td><td>估算城市/地区——应用不会请求也无法访问设备的精确位置（GPS），因为未申请该权限</td></tr><tr><td>设备或其他标识符</td><td>广告 ID、App Set ID</td><td>在多次请求之间识别设备；应用我们在 AdMob 账户中设置的广告展示频率上限；关联同一设备上多个应用的行为</td></tr><tr><td>应用互动</td><td>开屏广告的展示和互动</td><td>衡量广告是否被展示或点击</td></tr><tr><td>诊断</td><td>SDK 的技术和稳定性数据</td><td>性能，亦用于广告目的——由 SDK 自动收集，而非由我们编写的代码收集</td></tr></table></div>
+  <p>这些数据由 Google 根据其自身的隐私政策直接收集和处理，你可以在此阅读： <a href="https://policies.google.com/privacy" target="_blank" rel="noopener" dir="ltr">policies.google.com/privacy</a>. 这些数据可能会与 Google 广告网络的其他合作伙伴共享。</p>
+  <p class="dim">这种数据交换是应用需要保持互联网连接才能运行的原因，即使应用的其余功能完全在本地运行。本节与应用在 Google Play 上的“数据安全”部分所作声明保持一致：如两者有出入，以 Google Play 上的声明为准。</p>
+  <h2><span class="num">3.</span>你的选择</h2><ul><li><strong>广告 ID：</strong>你可以在设备的隐私设置中重置它或关闭个性化广告（Android：设置 → Google → 广告）。</li><li><strong>档案数据：</strong>你可以随时在应用内修改或删除，或通过卸载应用将其完全清除。</li><li><strong>通知：</strong>你可以在设备设置或应用设置中关闭通知。</li></ul>
+  <h2><span class="num">4.</span>未成年人</h2><p>Ascendent System 并非专门面向未成年人的应用。应用在初始设置时会要求申报年龄；如果用户申报的年龄低于要求，则必须在父母或监护人同意下使用本应用，如应用文本本身所述。</p>
+  <h2><span class="num">5.</span>你的权利（欧洲经济区用户）</h2><p>如果你位于欧盟，你有权访问、更正或要求删除与你有关的数据。由于档案和进度仅保存在你的设备上，删除非常简单：删除应用数据或卸载应用即可。对于 Google 通过 AdMob 收集的数据，你可以直接向 Google 行使权利，也可以通过设备设置行使。</p>
+  <h2><span class="num">6.</span>本政策的变更</h2><p>如果我们更新本政策，页面顶部的日期将相应更新。建议你定期查看。</p>
+  <h2><span class="num">7.</span>联系方式</h2>
+  <p>数据控制者：William Giaimo（个体经营）。<br>如对本政策或所处理的数据有任何疑问，请联系： <a href="mailto:ascendentsystem@gmail.com" dir="ltr">ascendentsystem@gmail.com</a></p>
+  <footer>为方便起见，本政策提供多种语言版本。如各版本之间有出入，以意大利语版本为准。</footer>
+</section>
+<section class="lang-section" lang="ja" dir="ltr" data-lang="ja">
+  <h1>プライバシーポリシー</h1>
+  <p class="meta">データ管理者：William Giaimo（個人事業主） — 最終更新日: <span class="placeholder">[公開日を入力]</span></p>
+  <p class="intro">本ポリシーは、アプリ「<strong>Ascendent System</strong>」が収集する情報とその利用方法について説明するものです。データ管理者は、本アプリを開発・公開している個人事業主の <strong>William Giaimo</strong> です。長さよりも分かりやすさを重視して作成しました。ご不明な点は、ページ下部の連絡先までお問い合わせください。</p>
+  <div class="card"><p><strong>要点：</strong>トレーニングプロフィール（名前、体重、年齢、身長）と進捗は<strong>お使いの端末内にのみ</strong>保存され、サーバーへ送信されることは一切ありません。外部とのデータのやり取りは、アプリを支える広告を表示する Google AdMob を通じたものだけです。</p></div>
+  <h2><span class="num">1.</span>端末内にのみ保存されるデータ</h2>
+  <p>Ascendent System はローカルで動作するアプリです。以下の情報は端末のストレージにのみ保存され、当方や第三者に送信されることはなく、あなた自身だけがアクセスできます。</p><ul><li>プロフィールに入力した名前、体重、身長、年齢、性別</li><li>初期テストの結果とトレーニング履歴</li><li>ミッション、進捗、統計、到達レベル</li><li>アプリの設定（言語、テーマ、通知設定）</li></ul><p class="dim">アプリをアンインストールするか、端末の設定からアプリのデータを消去すると、これらの情報は完全に削除されます。当方はそもそも受け取っていないため、どこにもコピーを保持していません。</p>
+  <h2><span class="num">2.</span>広告を通じて収集されるデータ（Google AdMob）</h2>
+  <p>アプリの開発を支えるため、<strong>Google AdMob</strong>（Google Mobile Ads SDK）を通じて、1種類の広告形式のみを表示します。アプリを再び開いたときに表示される全画面の<strong>アプリ起動時広告（App Open）</strong>です。バナー、リワード動画、インタースティシャル、ネイティブ広告など、他の形式は使用しません。アプリがこの広告をリクエストすると、端末は Google のサーバーと通信し、Google が以下の情報を自動的に収集します。分類は Google Play の「データセーフティ」セクションで使われるものと同じです。</p>
+  <div class="tablewrap"><table><tr><th>カテゴリ（Google Play）</th><th>データ</th><th>目的</th></tr><tr><td>おおよその位置情報</td><td>IPアドレス</td><td>市区町村レベルの推定。アプリは端末の正確な位置情報（GPS）を要求せず、アクセスもしません（該当する権限を要求していないため）</td></tr><tr><td>デバイスまたはその他のID</td><td>広告ID、App Set ID</td><td>リクエスト間での端末の識別、当方の AdMob アカウントで設定した広告表示頻度の上限の適用、同一端末上の複数アプリ間での行動の関連付け</td></tr><tr><td>アプリのインタラクション</td><td>App Open 広告の表示とインタラクション</td><td>広告が表示またはタップされたかの計測</td></tr><tr><td>診断</td><td>SDK の技術的・安定性に関するデータ</td><td>パフォーマンス（広告目的を含む）。SDK が自動的に収集するもので、当方が作成したコードによるものではありません</td></tr></table></div>
+  <p>これらのデータは、Google 自身のプライバシーポリシーに従い、Google が直接収集・処理します。ポリシーはこちらでご覧いただけます： <a href="https://policies.google.com/privacy" target="_blank" rel="noopener" dir="ltr">policies.google.com/privacy</a>. Google の広告ネットワークの他のパートナーと共有される場合があります。</p>
+  <p class="dim">このデータのやり取りが、アプリのその他の機能が完全にローカルであっても、アプリの動作にインターネット接続が必要な理由です。本セクションは、Google Play のアプリ掲載ページの「データセーフティ」セクションでの申告内容と整合しています。両者に相違がある場合は、Google Play での申告内容が優先されます。</p>
+  <h2><span class="num">3.</span>あなたの選択</h2><ul><li><strong>広告ID：</strong>端末のプライバシー設定からリセットしたり、パーソナライズ広告をオフにしたりできます（Android：設定 → Google → 広告）。</li><li><strong>プロフィールデータ：</strong>アプリ内でいつでも編集・削除できます。アプリをアンインストールすれば完全に削除されます。</li><li><strong>通知：</strong>端末の設定またはアプリの設定からオフにできます。</li></ul>
+  <h2><span class="num">4.</span>未成年者</h2><p>Ascendent System は、特に未成年者を対象としたアプリではありません。アプリは初期設定時に年齢の申告を求めます。申告された年齢が必要な年齢に満たない場合、アプリのテキストに記載のとおり、保護者の同意のもとで利用する必要があります。</p>
+  <h2><span class="num">5.</span>あなたの権利（欧州経済領域のユーザー）</h2><p>EU 域内にお住まいの場合、ご自身に関するデータへのアクセス、訂正、削除を請求する権利があります。プロフィールと進捗は端末内にのみ保存されるため、削除は簡単です。アプリのデータを削除するか、アプリをアンインストールしてください。Google が AdMob を通じて収集したデータについては、端末の設定のほか、Google に直接権利を行使することもできます。</p>
+  <h2><span class="num">6.</span>本ポリシーの変更</h2><p>本ポリシーを更新した場合は、ページ上部の日付をそれに合わせて更新します。定期的にご確認いただくことをお勧めします。</p>
+  <h2><span class="num">7.</span>お問い合わせ</h2>
+  <p>データ管理者：William Giaimo（個人事業主）。<br>本ポリシーまたは取り扱うデータに関するご質問は、以下までご連絡ください。 <a href="mailto:ascendentsystem@gmail.com" dir="ltr">ascendentsystem@gmail.com</a></p>
+  <footer>本ポリシーは利便性のため複数の言語で提供しています。各言語版の間に相違がある場合は、イタリア語版が優先されます。</footer>
+</section>
+<section class="lang-section" lang="ar" dir="rtl" data-lang="ar">
+  <h1>سياسة الخصوصية</h1>
+  <p class="meta">المسؤول عن معالجة البيانات: William Giaimo (منشأة فردية) — آخر تحديث: <span class="placeholder">[أدخل تاريخ النشر]</span></p>
+  <p class="intro">تشرح هذه السياسة المعلومات التي يجمعها تطبيق <strong>Ascendent System</strong> وكيفية استخدامها. المسؤول عن معالجة البيانات هو <strong>William Giaimo</strong>، صاحب المنشأة الفردية التي تطوّر التطبيق وتنشره. كتبناها لتكون واضحة لا طويلة: إذا لم يتضح لك أي أمر، يمكنك مراسلتنا على العنوان الموجود أسفل الصفحة.</p>
+  <div class="card"><p><strong>باختصار:</strong> ملفك التدريبي (الاسم والوزن والعمر والطول) وتقدّمك يبقيان <strong>على جهازك فقط</strong> — ولا نرسلهما أبدًا إلى أي خادم. التبادل الوحيد للبيانات مع الخارج يتم عبر Google AdMob، الخدمة التي تعرض الإعلانات الداعمة للتطبيق.</p></div>
+  <h2><span class="num">1.</span>البيانات التي تبقى على جهازك</h2>
+  <p>يعمل Ascendent System محليًا. تُحفظ المعلومات التالية حصرًا في ذاكرة جهازك، ولا تُرسل إلينا ولا إلى أي طرف ثالث، ولا يمكن لأحد غيرك الوصول إليها:</p><ul><li>الاسم والوزن والطول والعمر والجنس المُدخلة في الملف الشخصي</li><li>نتائج الاختبار الأولي وسجل التمارين</li><li>المهام والتقدّم والإحصائيات والمستوى الذي بلغته</li><li>تفضيلات التطبيق (اللغة والسمة وإعدادات الإشعارات)</li></ul><p class="dim">إذا حذفت التطبيق أو مسحت بياناته من إعدادات هاتفك، تُحذف هذه المعلومات نهائيًا — فلا نحتفظ بنسخة منها في أي مكان، لأننا لا نستلمها أصلًا.</p>
+  <h2><span class="num">2.</span>البيانات التي تُجمع عبر الإعلانات (Google AdMob)</h2>
+  <p>لدعم تطوير التطبيق، نعرض صيغة إعلانية واحدة عبر <strong>Google AdMob</strong> (Google Mobile Ads SDK): إعلان <strong>فتح التطبيق (App Open)</strong> بملء الشاشة، يظهر عند إعادة فتح التطبيق. لا نستخدم صيغًا أخرى (لا لافتات ولا فيديو مكافئ ولا إعلانات بينية ولا إعلانات أصلية). عندما يطلب التطبيق هذا الإعلان، يتصل جهازك بخوادم Google، التي تجمع تلقائيًا المعلومات التالية، ضمن الفئات نفسها المستخدمة في قسم «أمان البيانات» في Google Play:</p>
+  <div class="tablewrap"><table><tr><th>الفئة (Google Play)</th><th>البيانات</th><th>الغرض</th></tr><tr><td>الموقع التقريبي</td><td>عنوان IP</td><td>تقدير المدينة/المنطقة — لا يطلب التطبيق الموقع الدقيق (GPS) للجهاز ولا يصل إليه، إذ لا يطلب هذا الإذن</td></tr><tr><td>معرّفات الجهاز أو معرّفات أخرى</td><td>معرّف الإعلانات، App Set ID</td><td>التعرّف على الجهاز بين الطلبات؛ تطبيق حدّ تكرار الإعلانات المضبوط في حسابنا على AdMob؛ ربط السلوك بين عدة تطبيقات على الجهاز نفسه</td></tr><tr><td>تفاعلات التطبيق</td><td>مشاهدات إعلان App Open والتفاعل معه</td><td>قياس ما إذا عُرض الإعلان أو نُقر عليه</td></tr><tr><td>التشخيص</td><td>بيانات تقنية وبيانات استقرار خاصة بالـ SDK</td><td>الأداء، بما في ذلك لأغراض إعلانية — تُجمع تلقائيًا بواسطة الـ SDK، وليس بواسطة شيفرة كتبناها</td></tr></table></div>
+  <p>تُجمع هذه البيانات وتُعالج مباشرة بواسطة Google وفق سياسة الخصوصية الخاصة بها، ويمكنك الاطلاع عليها هنا: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener" dir="ltr">policies.google.com/privacy</a>. وقد تُشارك مع شركاء آخرين في شبكة Google الإعلانية.</p>
+  <p class="dim">هذا التبادل للبيانات هو سبب حاجة التطبيق إلى اتصال نشط بالإنترنت ليعمل، رغم أن بقية وظائفه محلية بالكامل. يتوافق هذا القسم مع ما صرّحنا به في قسم «أمان البيانات» في صفحة التطبيق على Google Play: وعند أي تعارض بين الاثنين، يُعتدّ بما صُرّح به على Google Play.</p>
+  <h2><span class="num">3.</span>خياراتك</h2><ul><li><strong>معرّف الإعلانات:</strong> يمكنك إعادة تعيينه أو إيقاف الإعلانات المخصّصة من إعدادات الخصوصية في جهازك (على أندرويد: الإعدادات ← Google ← الإعلانات).</li><li><strong>بيانات الملف الشخصي:</strong> يمكنك تعديلها أو حذفها في أي وقت من داخل التطبيق، أو إزالتها بالكامل بحذف التطبيق.</li><li><strong>الإشعارات:</strong> يمكنك إيقافها من إعدادات الجهاز أو إعدادات التطبيق.</li></ul>
+  <h2><span class="num">4.</span>القاصرون</h2><p>Ascendent System ليس تطبيقًا موجّهًا تحديدًا للقاصرين. يطلب التطبيق إقرارًا بالعمر أثناء الإعداد الأولي؛ وإذا أقرّ المستخدم بعمر أقل من المطلوب، فيجب أن يتم استخدام التطبيق بموافقة أحد الوالدين أو الوصي، كما ورد في نص التطبيق نفسه.</p>
+  <h2><span class="num">5.</span>حقوقك (مستخدمو المنطقة الاقتصادية الأوروبية)</h2><p>إذا كنت في الاتحاد الأوروبي، فلك الحق في الوصول إلى البيانات المتعلقة بك أو تصحيحها أو طلب حذفها. وبما أن الملف الشخصي والتقدّم يبقيان على جهازك فقط، فالحذف بسيط: احذف بيانات التطبيق أو احذفه. أما البيانات التي تجمعها Google عبر AdMob، فيمكنك ممارسة حقوقك بشأنها مباشرة لدى Google، إضافة إلى إعدادات جهازك.</p>
+  <h2><span class="num">6.</span>التعديلات على هذه السياسة</h2><p>إذا حدّثنا هذه السياسة، فسيُحدَّث التاريخ في أعلى الصفحة وفقًا لذلك. نشجعك على مراجعتها دوريًا.</p>
+  <h2><span class="num">7.</span>التواصل</h2>
+  <p>المسؤول عن معالجة البيانات: William Giaimo (منشأة فردية).<br>لأي سؤال حول هذه السياسة أو البيانات المعالجة، راسلنا على: <a href="mailto:ascendentsystem@gmail.com" dir="ltr">ascendentsystem@gmail.com</a></p>
+  <footer>تتوفر هذه السياسة بعدة لغات لتسهيل الاطلاع. وفي حال وجود اختلاف بين النسخ، تُعتمد النسخة الإيطالية.</footer>
+</section>
 </div>
+<script>
+(function () {
+  var supported = ['it','en','zh','ja','ar'];
+  var secs = document.querySelectorAll('.lang-section');
+  var btns = document.querySelectorAll('.langs button');
+  function pick() {
+    var q = null;
+    try { q = new URLSearchParams(location.search).get('lang'); } catch (e) {}
+    if (q && supported.indexOf(q) > -1) return q;
+    var nav = (navigator.language || 'en').slice(0, 2).toLowerCase();
+    return supported.indexOf(nav) > -1 ? nav : 'en';
+  }
+  function show(code, updateUrl) {
+    secs.forEach(function (s) { s.classList.toggle('active', s.getAttribute('data-lang') === code); });
+    btns.forEach(function (b) { b.setAttribute('aria-pressed', b.getAttribute('data-set') === code ? 'true' : 'false'); });
+    document.documentElement.lang = code;
+    document.documentElement.dir = code === 'ar' ? 'rtl' : 'ltr';
+    if (updateUrl) { try { history.replaceState(null, '', '?lang=' + code); } catch (e) {} }
+  }
+  btns.forEach(function (b) { b.addEventListener('click', function () { show(b.getAttribute('data-set'), true); }); });
+  show(pick(), false);
+})();
+</script>
 </body>
 </html>
